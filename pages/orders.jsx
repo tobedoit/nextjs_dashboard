@@ -6,16 +6,16 @@ const orders = () => {
   return (
     <div className='bg-gray-100 min-h-screen'>
       <div className='flex justify-between p-4'>
-        <h2>Orders</h2>
-        <h2>Welcome Back, Client</h2>
+        <h2>주문</h2>
+        <h2>관리자 페이지, 유재민님</h2>
       </div>
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center cursor-pointer justify-between'>
-            <span>Order</span>
-            <span className='sm:text-left text-right'>Status</span>
-            <span className='hidden md:grid'>Last Order</span>
-            <span className='hidden sm:grid'>Method</span>
+            <span>주문</span>
+            <span className='sm:text-left text-right'>상태</span>
+            <span className='hidden md:grid'>최근 주문</span>
+            <span className='hidden sm:grid'>결제방식</span>
           </div>
           <ul>
             {data.map((order) => (
@@ -25,8 +25,8 @@ const orders = () => {
                     <FaShoppingBag className='text-purple-800' />
                   </div>
                   <div className='pl-4'>
-                    <p className='text-gray-800 font-bold'>${order.total.toLocaleString()}</p>
-                    <p className='text-gray-800 text-sm'>{order.name.first}</p>
+                    <p className='text-gray-800 font-bold'>₩ {order.total.toLocaleString()}</p>
+                    <p className='text-gray-800 text-sm'>{order.name.last}</p>
                   </div>
                 </div>
                 <p className='text-gray-600 sm:text-left text-right'>

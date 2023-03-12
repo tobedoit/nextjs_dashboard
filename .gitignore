@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 *.code-workspace
+data-backup.js
 
 # testing
 /coverage

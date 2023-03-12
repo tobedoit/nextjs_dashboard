@@ -28,10 +28,10 @@ const BarChart = () => {
   const [chartOptions, setChartOptions] = useState({});
   useEffect(() => {
     setChartData({
-      labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
+      labels: ['월', '화', '수', '목', '금', '토', '일'],
       datasets: [
         {
-          label: 'Sales $',
+          label: '판매 ₩',
           data: [18127, 22201, 19490, 17938, 24182, 17842, 22475],
           borderColor: 'rgb(53, 162, 235)',
           backgroundColor: 'rgb(53, 162, 235, 0.4',
@@ -45,7 +45,7 @@ const BarChart = () => {
         },
         title: {
           display: true,
-          text: 'Daily Revenue'
+          text: '일일 수익'
         },
       },
       maintainAspectRatio: false,
